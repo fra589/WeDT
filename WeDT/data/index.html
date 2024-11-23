@@ -1,0 +1,9 @@
+<!doctype html><html lang=fr><meta charset=utf-8><meta name=viewport content="width=device-width"><meta name=description content="Anémomètre Thermomètre Barmoètre"><title>!WeDT</title><link rel="shortcut icon" type=image/png href=images/favicon.svg><link id=cssMain rel=stylesheet href=style.css><script src=scripts.js></script><body onload=index_onload()><div id=lapage><image id=logo src=images/logo.svg><div id=entete><h1>RDT button for WeTimer</h1></div><div id=activeNetwork><label for=ssidActuel>Actual network, SSID =</label>
+<input name=ssidActuel id=ssidActuel readonly><br><label for=ipActuel>Actual network, IP =</label>
+<input name=ipActuel id=ipActuel readonly><p><div id=btnDeconnect title="Disconnect from current network..." onclick=deconnect_clique()>Disconnect...</div></div><hr class=lignePartielle><div id=networkTable></div><div id=dlgMask0 class="dlgMask noshow"><div id=dlgConnect class="dialog masquer"><div id=dlgContenu0 class=dlgPwdContenu><h2>Connect to a new WiFi</h2><p><label for=ssid_input>Connecting to network: SSID =</label>
+<input name=ssid_input id=ssid_input readonly><br><label for=pwd_input>Enter network password:</label>
+<input type=password name=pwd_input id=pwd_input onkeyup=connect_keyup(event)><br><span><image id=btnShowCliPasswd src=images/oeuil.svg title="Show password" onclick="toogleShowPasswd('cli');"></span></div><p class=alignement-droit id=dlgConnectButtons><button id=btnConnect title="Se connecter au réseau" onclick=connect_clique()>
+Connect</button>
+&nbsp;
+<button id=btnAnnuler title="Fermer cette boite de dialogue" onclick=connect_cancel()>
+Cancel</button></div></div><div id=cadre_attente><div id=attente0 class=attente></div></div></div>

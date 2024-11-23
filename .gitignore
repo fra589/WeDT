@@ -1,0 +1,13 @@
+no_git
+*.hex
+*.zip
+*.o
+*.bin
+*.FCStd1
+*.FCBak
+WeDT/build/*
+!vide.txt
+doc
+WeDT/data.src/chartjs
+WeDT/data/knownWiFi.xml
+releases/*
